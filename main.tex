@@ -1,0 +1,69 @@
+\documentclass[conference,compsoc,onecolumn]{IEEEtran}
+
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{minted}
+\usepackage[style=ieee, backend=biber, bibencoding=utf8, dashed=false]{biblatex}
+
+
+\addbibresource{resources/bib/online.bib}
+
+\title{Information Security for Web Services: Writing Assignment \#1}
+\author{
+  \IEEEauthorblockN{Christoph Stach}
+  \IEEEauthorblockA{
+    NTUST: National Taiwan University of Science and Technology\\
+    Student ID: E10815023\\
+    Email: christoph.stach@gmail.com
+  }
+}
+
+
+\begin{document}
+  \maketitle
+
+  
+  \section{Explain what is (system) interoperability?}
+
+    System interoperability is the ability of ICT systems to communicate with each other \cite{whatisinteroperability}. 
+    Today's IT infrastructure consists of many applications. 
+    Often these applications (or systems) should be capable of interchanging pieces of information. This is leveraged by providing a service-oriented computing infrastructure. 
+    Nowadays these infrastructures consist of many web services that can exchange data and information in different formats like \cite{json} or \cite{xml}.
+    The data produced by web services can be consumed by many different applications (Dekstop applications, mobile phone applications, websites, and other web services).
+    Modern web services are realized as REST-Services \cite{rest} or GraphQL \cite{graphql}-Services. Older ones are SOAP-Services \cite{soap} that are still existent in older IT infrastructures.
+    Frameworks like  \cite{spring}, \cite{nestjs},\cite{apollo} and many more can help creating web service.
+    
+  \section{Why system interoperability is necessary for modern companies?}
+
+    System interoperability is very important for modern companies. 
+    Companies often have such a huge IT infrastructure that the exchange of information is necessary. 
+    In today's world, a company without ICT Systems is not able to compete with other companies anymore \cite{whatisinteroperability}.
+    Many things can be automated by ICT systems.
+    To have a highly automated company system interoperability must be given. 
+    As an example, the companies website needs to display the products the company is selling. Those are stored in an enterprise resource planning (ERP) system.
+    The automate the process the website needs to able to fetch product details and prices from the ERP.
+    Many companies analyze different things to predict the future most accurately and make profitable decisions.
+    To analyze data from different ICT systems in a single place the systems need to provide interoperable interfaces like web services.
+
+    
+  \section{How do you achieve (system) interoperability prior to web services technology?}
+  
+    Today interoperability is achieved by ICT systems, providing web services. These have the benefit that they are loosely coupled and systems from different vendors can communicate with each other.
+    It is even possible that web services are written in different programming languages, they can still work together. 
+    Today's behavior we  call services-oriented were different ICT services provide web services that can communicate with each other.
+    In the past, this technology didn't exist. ICT systems were object-oriented organized.
+    Only ICT systems written in the same programming languages could communicate with each other and exchange information. 
+    The reason for that is different programming languages use different data types which are not always completely compatible.
+    Another solution to achieve interoperably was to grant other Systems direct access to the system's database, which is general a security issue \cite{databasesecurity}. 
+
+    
+  \printbibliography[heading=bibintoc]  
+    
+\end{document}
